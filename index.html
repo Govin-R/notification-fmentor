@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./styles.css">
   
   <title>Frontend Mentor | Notifications page</title>
 
@@ -15,33 +16,81 @@
   </style>
 </head>
 <body>
+	<main id="container">
+		<div id="top">
+			<h2>
+			Notifications 3</h2>
+			<h3>
+				Mark all as read</h3>
+		</div>
+	<section id="listed">
+		<div class="notification">
+			<section class="oneline">
+			<img src="./assets/images/avatar-mark-webber.webp" alt="mark_webber"/>
+			<p><b>Mark Webber</b> reacted to your recent post <b>My first tournament today!</b></p></section>
+			<h5 class="time">1m ago</h5>
+		</div>
 
-  Notifications 3
+	<div class="notification">
+		<section class="online">
+				<img src="./assets/images/avatar-angela-gray.webp" alt="Angela"/>
+				<p>	<b>Angela Gray</b> followed you</p>
+		</section>
+		<h5 class="time">5m ago<h5>
+	</div>
 
-  Mark all as read
+	<div class='notification'>
+		<section class="oneline">
+		<img src="./assets/images/avatar-jacob-thompson.webp" alt="jacob"/>
+		<p><b>Jacob Thompson</b> has joined your group <b>Chess Club</b></p></section>
+		<h5 class="time">1 day ago<h5>
+	</div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+	<div class="notification">
 
-  Angela Gray followed you
-  5m ago
+		<section class="oneline">	
+			<a href="./assets/images/avatar-rizky-hasanuddin.webp"><img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky"/></a>
+			<p class="sub">
+			<section class="o1">
+			<section class="info">
+			<b>Rizky Hasanuddin</b> sent you a private message
+			</section>
+			<h5 class="time"> 5 days ago</h5></section>
+		</section>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
+	<section id='multiline'>
+	<p>
   Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+	I'm already having lots of fun and improving my game.</p>
+	</section>
+	</div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+	<div class="notification">
+		<section class="oneline">
+			<img src="./assets/images/avatar-kimberly-smith.webp" alt="kimberly"/>
+		<p>
+		<b>Kimberly Smith</b> commented on your picture</p></section>
+			<h5 class="time">	1 week ago</h5>
+		<section class="multiImage">
+				<img src="./assets/images/image-chess.webp" alt="chess"/>
+		</section>
+	</div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+	<div class="notification">
+		<section class="oneline">
+		<img src="./assets/images/avatar-nathan-peterson.webp" alt="nathan"/>
+		<p><b>Nathan Peterson</b> reacted to your recent post <b>5 end-game strategies to increase your win rate</b></p></section>
+		<h5 class="time">2 weeks ago</h5>
+	</div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
+	<div class='notification'>
+		<section class="oneline">
+			<img src="./assets/images/avatar-anna-kim.webp" alt="anna"/>
+			<b>Anna Kim left</b> the group <b>Chess Club</b></section>
+		<h5 class="time">	2 weeks ago</h5>
+	</div>
+	</section>
+	</main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
