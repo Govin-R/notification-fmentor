@@ -1,37 +1,21 @@
-#container {
-  display: flex;
-  flex-direction: column;
-}
-
-#top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #listed {
   display: flex;
   flex-direction: column;
 }
 
-.oneline {
-  display: flex;
-  flex-direction: row;
-}
-.oneline img {
-  height: 3rem;
+.notification {
+  border: 0.5px solid black;
 }
 
-.notification {
-  border: 2px solid black;
+.oneline {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.oneline p {
+  border: 0.5px solid green;
 }
 
 .time {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  width: max-content;
   display: block;
 }
 
