@@ -1,22 +1,92 @@
 #listed {
   display: flex;
   flex-direction: column;
+  padding: 1.3rem;
+  color: hsl(219deg, 14%, 42%);
 }
-
-.notification {
-  border: 0.5px solid black;
+#listed b {
+  color: black;
 }
 
 .oneline {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  padding: 0.5rem;
 }
 .oneline p {
-  border: 0.5px solid green;
+  text-align: left;
+}
+.oneline img {
+  border-radius: 99rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.6rem;
 }
 
 .time {
   display: block;
+  padding: 0.5rem 0 0 0;
+  opacity: 0.5;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#top h2, #top h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+#top h3 {
+  font-size: 0.9rem;
+}
+
+.with_image {
+  display: flex;
+}
+.with_image img {
+  width: 3rem;
+}
+.with_image .multiImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.multiline {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification_count {
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0 0.5rem;
+  margin-left: 0.2rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.message {
+  border: 0.5px solid rgba(17, 17, 17, 0.2);
+  padding: 1rem;
+}
+
+.group {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: bold;
+}
+
+.id_name {
+  font-weight: bold;
+  color: black;
+}
+
+.activity {
+  color: #111;
+  opacity: 0.8;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
