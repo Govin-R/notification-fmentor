@@ -1,3 +1,7 @@
+p, h1, h2, h3, h4, h5, h6, img, span {
+  cursor: pointer;
+}
+
 #listed {
   display: flex;
   flex-direction: column;
@@ -50,7 +54,7 @@
 }
 .with_image .multiImage {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   flex: 1;
 }
@@ -82,11 +86,37 @@
   font-weight: bold;
   color: black;
 }
+.id_name:hover {
+  color: darkblue;
+}
 
 .activity {
-  color: #111;
+  color: hsl(235deg, 60%, 20%);
   opacity: 0.8;
   font-weight: bold;
+}
+.activity:hover {
+  color: hsl(235deg, 100%, 30%);
+}
+
+.unread::before {
+  content: "oo";
+  position: relative;
+  left: 0.2rem;
+  color: transparent;
+  background-color: red;
+  border-radius: 99rem;
+  font-size: xx-small;
+}
+
+@media (min-width: 590px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+  #container-0 {
+    width: 600px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

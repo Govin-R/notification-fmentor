@@ -1,3 +1,8 @@
+p,h1,h2,h3,h4,h5,h6,img,span {
+	cursor:pointer;
+}
+
+
 #listed{
 	display:flex;
 	flex-direction:column;
@@ -65,7 +70,7 @@
 		}
 		.multiImage{
 			display:flex;
-			justify-content:center;
+			justify-content:right;
 			align-items:center;
 			flex:1;
 
@@ -101,15 +106,42 @@
 .id_name{
 	font-weight:bold;
 	color:black;
+
+	&:hover{
+		color:darkblue;
+	}
 }
 
 .activity{
-	color:#111;
+	color:hsl(235deg 60% 20%);
 	opacity:0.8;
 	font-weight:bold;
+	
+	&:hover{
+		color:hsl(235deg 100% 30%);
+	}
 }
 
-.unread{	
+.unread::before{	
+	content:"oo";
+	position:relative;
+	left:0.2rem;
+	color:transparent;
+	background-color:red;
+	border-radius:99rem;
+	font-size:xx-small;
+}
+
+@media(min-width:590px){
+	
+
+	body{
+		display:grid;
+		place-items:center;
+	}
+	#container-0{
+		width:600px
+	}
 
 
 }
